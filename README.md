@@ -12,6 +12,7 @@ Get function handles of the benchmark function using index.
 ### inputs:
 - `index` - integer
 - `d` - demension of benchmark functions
+
 ### outputs:
 - `J` - function handle, calculating the fitness of x (an d-by-n matrix) 
 - `lmt` - constraints 

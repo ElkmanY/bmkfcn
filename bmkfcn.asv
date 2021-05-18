@@ -21,13 +21,12 @@ switch index
         name = 'Schwefel-2.22';
     case {3,'Rosenbrock'}
         if d<2
-            error('Demension d of the Rosenbrock function is no less than 2.');
-        end
+            error("Demension of the 'Rosenbrock' function is at least " 
         a = 1; b =100;
         J = @(x) sum((b*(x(2:end,:)-x(1:end-1,:).^2).^2 + (a - x(1:end-1,:)).^2),1);
         lmt = ones(d,1)*[-5,10];
         name = 'Rosenbrock';
-    % case 4
+    % case 3
     % under construction...
 end
 end
